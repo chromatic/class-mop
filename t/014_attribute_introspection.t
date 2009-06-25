@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 69;
+use Test::More tests => 71;
 use Test::Exception;
 
 use Class::MOP;
@@ -22,6 +22,7 @@ use Class::MOP;
         initialize_instance_slot
         _set_initial_slot_value
 
+        is_lazy
         name
         has_accessor      accessor
         has_writer        writer
@@ -59,6 +60,7 @@ use Class::MOP;
         install_accessors
         remove_accessors
 
+        _call_builder
         _new
         );
 
